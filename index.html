@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron jumbotron-fluid text-center">
+                    <div class="container">
+                        <h1 class="display-4">Crystal Collecting</h1>
+                        <h3 class="display-6">How to Play</h3>
+                        <p class="display-8">There are four crystals. Each are given a random number value every game.
+                            Every click on a crystal adds it to
+                            your total. Try to match it to the number given to you. If you do, you win. If you go over
+                            or restart, you lose.</p>
+                    </div>
+                </div>
+
+                <div class="jumbotron jumbotron-fluid text-center">
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- Player Counter -->
+                            <div class="col-md-3">
+                                <h3>Your Total</h3>
+                                <h2 id="playerTotal"></h2>
+                            </div>
+
+                            <!-- Crystals -->
+                            <class class="col-md-6">
+
+                                <button id="button1"><img src="./assets/images/Crystal1.jpg" alt="Crystal 1"></button>
+                                <button id="button2"><img src="./assets/images/Crystal2.jpg" alt="Crystal 2"></button>
+                                <button id="button3"><img src="./assets/images/Crystal3.jpg" alt="Crystal 3"></button>
+                                <button id="button4"><img src="./assets/images/Crystal4.jpg" alt="Crystal 4"></button>
+                            </class>
+
+                            <!-- Random Number -->
+                            <div class="col-md-3">
+                                <h3>Match This</h3>
+                                <h2 id="randomMatch"></h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="jumbotron jumbotron-fluid text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+
+                            <!-- Wins -->
+                            <div class="col-md-3">
+                                <h3>Wins</h3>
+                                <h2 id="wins">0</h2>
+                            </div>
+                            <!-- Restart Button -->
+                            <div class="col-md-4">
+                                <button id="restart"><img src="./assets/images/Restart.png" alt="Restart" id='restartImg'></button>
+                            </div>
+                            <!-- Losses -->
+                            <div class="col-md-3">
+                                <h3>Losses</h3>
+                                <h2 id="losses">0</h2>
+                            </div>
+
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>
