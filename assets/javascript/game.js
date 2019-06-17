@@ -100,6 +100,7 @@ $(document).ready(function () {
     $('#restart').on('click', function () {
         if (gameEnd === false) {
             losses++
+            $('#losses').html(losses)
         }
         initialize()
     })
